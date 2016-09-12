@@ -2,21 +2,31 @@
 
 namespace _03_Simon_Says
 {
-    internal class Simon
+    public class Simon
     {
-        internal string Echo(string v)
+        public string Echo(string v)
         {
             return v.ToLower();
         }
 
-        internal string Shout(string v)
+        public string Shout(string v)
         {
-            ();
+            return v.ToUpper();
         }
 
-        //internal string Repeat(string v)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public string Repeat(string v)
+        {
+            return v + " " + v;
+        }
+
+        public object Repeat(string v1, int v2)
+        {
+            string All = "";
+            for (int i = 0; i < v2; i++)
+            {
+                All = All + v1 + " ";
+            }
+            return All.Trim();
+        }
     }
 }

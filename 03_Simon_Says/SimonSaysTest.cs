@@ -30,18 +30,18 @@ namespace _03_Simon_Says
             Simon simon = new Simon();
             Assert.AreEqual("HELLO", simon.Shout("hello"));
         }
-        //[TestMethod]
-        //public void ShoutMultipleWords()
-        //{
-        //    Simon simon = new Simon();
-        //    Assert.AreEqual("HELLO WORLD", simon.Shout("hello world"));
-        //}
-        //[TestMethod]
-        //public void ShouldRepeat()
-        //{
-        //    Simon simon = new Simon();
-        //    Assert.AreEqual("hello hello", simon.Repeat("hello"));
-        //}
+        [TestMethod]
+        public void ShoutMultipleWords()
+        {
+            Simon simon = new Simon();
+            Assert.AreEqual("HELLO WORLD", simon.Shout("hello world"));
+        }
+        [TestMethod]
+        public void ShouldRepeat()
+        {
+            Simon simon = new Simon();
+            Assert.AreEqual("hello hello", simon.Repeat("hello"));
+        }
 
 
         // Wait a second! How can you make the "repeat" method
@@ -49,12 +49,12 @@ namespace _03_Simon_Says
 
         // Hint: "Default values"
 
-        //[TestMethod]
-        //public void ShouldRepeatANumberOfTimes()
-        //{
-        //    Simon simon = new Simon();
-        //    Assert.AreEqual("hello hello hello", simon.Repeat("hello", 3));
-        //}
+        [TestMethod]
+        public void ShouldRepeatANumberOfTimes()
+        {
+            Simon simon = new Simon();
+            Assert.AreEqual("hello hello hello", simon.Repeat("hello", 3));
+        }
 
         //[TestMethod]
         //public void ShouldRepeatANumberOfTimes()
