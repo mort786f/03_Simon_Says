@@ -27,6 +27,7 @@ namespace _03_Simon_Says
                 All = All + v1 + " ";
             }
             return All.Trim();
+
         }
     }
 }
